@@ -6,9 +6,9 @@ import Script from "next/script";
 
 import { getApiHost } from "@/pages";
 
-import { PT_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const pt_mono = PT_Mono({ weight: "400", subsets: ["latin"] });
+const pt_mono = Montserrat({ weight: "400", subsets: ["latin"] });
 
 import "../app/globals.css";
 

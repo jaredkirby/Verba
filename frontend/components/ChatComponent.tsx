@@ -85,7 +85,7 @@ export function ChatComponent({
   }, [messageHistory]);
 
   return (
-    <div className="bg-gray-100 p-4 overflow-y-auto h-[350px]">
+    <div className="bg-gray-100 p-4 overflow-y-auto h-[450px]">
       {messageHistory.map((message, index) => (
         <div
           ref={index === messageHistory.length - 1 ? lastMessageRef : null}
@@ -93,7 +93,7 @@ export function ChatComponent({
           className={`mb-4 ${message.type === "user" ? "text-right" : ""}`}
         >
           <span
-            className={`inline-block p-3 rounded-xl animate-press-in shadow-md font-mono text-sm ${message.type === "user" ? "bg-yellow-200" : "bg-white"
+            className={`inline-block p-3 rounded-xl animate-press-in shadow-md font-sans text-md ${message.type === "user" ? "bg-green-200" : "bg-white"
               }`}
           >
             {message.type === "system"
